@@ -2,7 +2,7 @@ import sqlite3
 #Quantidade de horas consumidas e plays por categoria
 
 def hours_quantity(cursor):
-    cursor.execute("""SELECT SUM(CAST(REPLACE(horas_consumidas, ',', '.') 
+    cursor.execute("""SELECT SUM(CAST(horas_consumidas 
                       AS FLOAT)) 
                       FROM consumo;""")
     

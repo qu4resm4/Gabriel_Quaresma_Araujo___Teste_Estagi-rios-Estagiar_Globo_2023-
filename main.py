@@ -1,4 +1,5 @@
 from criandoDB import *
+from reformatando import *
 from mostrando import *
 from question1 import *
 from question2 import *
@@ -8,14 +9,15 @@ from question5 import *
 
 #Execução do criandoDB  
 #main()
+#reformatando()
 
 #question1()
 
 #question2()
 
-#question3()
+question3()
 
-question4()
+#question4()
 
 #question5()
 

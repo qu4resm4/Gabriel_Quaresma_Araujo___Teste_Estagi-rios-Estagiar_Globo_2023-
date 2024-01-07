@@ -6,7 +6,8 @@ def question4():
     cursor = db.cursor()
 
     cursor.execute("""SELECT co.id_user,
-                      AVG(CAST(REPLACE(horas_consumidas, ',', '.') AS FLOAT)) AS media_horas_consumidas
+                      AVG(CAST(horas_consumidas 
+                      AS FLOAT)) AS media_horas_consumidas
                       FROM consumo co 
                       GROUP BY co.id_user""")
     media_user = cursor.fetchall()
