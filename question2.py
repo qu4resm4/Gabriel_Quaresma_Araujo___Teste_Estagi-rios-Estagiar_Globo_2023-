@@ -18,7 +18,7 @@ def question2():
                       WHERE c.categoria = 'novela';
 """)
     response = cursor.fetchall()
-    #print(response)
+    print("O valor retornado da query é: ", response, "\n")
   
     #Iterando os registros e adicionando os meses ao conjunto
     for registro in response:
