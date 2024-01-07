@@ -1,18 +1,16 @@
 import sqlite3
 
-def mostrar_dados_tabela(nome_tabela):
-    # Conectar ao banco de dados
-    conn = sqlite3.connect('registros.db')
-    cursor = conn.cursor()
+def print_table(table_name):
+    db = sqlite3.connect('registros.db')
+    cursor =db.cursor()
 
-    # Consultar todos os dados da tabela
-    cursor.execute(f'SELECT * FROM {nome_tabela}')
-    dados = cursor.fetchall()
+    cursor.execute(f'SELECT * FROM {table_name}')
+    column_names = [column[0] for column in cursor.description]
+    data = cursor.fetchall()
 
-    # Exibir os dados
-    print(f"\nDados da tabela {nome_tabela}:\n")
-    for linha in dados:
-        print(linha)
+    print(f"\nDados da tabela {table_name}:\n")
+    print(f"{', '.join(column_names)}")
+    for row in data:
+        print(row)
 
-    # Fechar a conexão
-    conn.close()
+    db.close()
