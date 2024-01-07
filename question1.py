@@ -7,7 +7,7 @@ def hours_quantity(cursor):
                       FROM consumo;""")
     
     total = cursor.fetchone()[0]
-    print("O valor retornado da query é: ", total)
+    print("O valor retornado da query é: ", total, "\n")
   
     total_h = int(total - (total % 1))
     total_m = int(((total % 1)*60) - ((total % 1)*60 % 1))
