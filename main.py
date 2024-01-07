@@ -15,7 +15,7 @@ from question5 import *
 
 #question2()
 
-question3()
+#question3()
 
 #question4()
 
