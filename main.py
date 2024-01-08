@@ -22,7 +22,7 @@ from question6 import *
 
 #question5()
 
-question6()
+#question6()
 
 #print_table('conteudo')
 #print_table('consumo')
