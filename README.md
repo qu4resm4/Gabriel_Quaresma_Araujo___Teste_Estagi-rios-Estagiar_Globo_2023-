@@ -1,6 +1,6 @@
 # Atividade Teste_Estagiarios do Programa Estagiar Globo 2023
 
-Este é o repositório para desenvolver a atividade do teste de estagiário do Programa Estagiar Globo 2023 
+Este é o repositório para desenvolver a atividade do teste de estagiário do Programa Estagiar Globo 2023.
 
 PASSO A PASSO PARA EXECUTAR O PROGRAMA:
 
@@ -17,3 +17,5 @@ PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT:
 
 ## Links
 - [Replit](https://replit.com/@qu4resm4/Gabriel-Quaresma-Araujo-Teste-Estagiarios-Estagiar-Globo)
+####
+Este projeto foi completamente desenvolvido utilizando a IDE online Replit.
