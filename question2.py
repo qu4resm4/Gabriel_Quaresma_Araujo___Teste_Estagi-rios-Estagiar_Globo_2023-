@@ -8,6 +8,7 @@ def format_hour(tempo):
     return f"{tempo_h} horas {tempo_m} minutos {tempo_s} segundos"
 
 def question2():
+    print("2 - Ranking de novelas com mais horas consumidas por mês\n")
     meses = set()
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()

@@ -6,6 +6,7 @@ from question2 import *
 from question3 import *
 from question4 import *
 from question5 import *
+from question6 import *
 
 #Execução do criandoDB  
 #main()
@@ -20,6 +21,8 @@ from question5 import *
 #question4()
 
 #question5()
+
+question6()
 
 #print_table('conteudo')
 #print_table('consumo')

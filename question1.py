@@ -28,6 +28,7 @@ def plays_category(cursor):
 
 
 def question1():
+    print("1 - Quantidade de horas consumidas e plays por categoria\n")
     db = sqlite3.connect('registros.db')
     cursor =db.cursor()
     

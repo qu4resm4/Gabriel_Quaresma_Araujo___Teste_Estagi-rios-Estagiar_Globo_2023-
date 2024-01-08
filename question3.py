@@ -3,6 +3,7 @@ from datetime import datetime
 #Conteúdo de primeiro play do usuário
 
 def question3():
+    print("3 - Conteúdo de primeiro play do usuário\n")
     set_user = set()
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()
