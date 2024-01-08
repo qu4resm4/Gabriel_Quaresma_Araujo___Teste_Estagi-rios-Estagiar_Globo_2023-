@@ -8,7 +8,8 @@ PASSO A PASSO PARA EXECUTAR O PROGRAMA:
 - Abrir o arquivo main.py
 - Executar arquivo main.py
 
-PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT:
+PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT (versão com últimas alterações):
+*commit no Replit bugou de novo, não estou conseguindo atualizar o repositório no GitHub
 
 - Acesse o link
 - Faça o seu login
