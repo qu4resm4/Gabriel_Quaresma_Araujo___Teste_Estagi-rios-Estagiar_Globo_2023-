@@ -13,7 +13,7 @@ def question2():
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()
   
-    cursor.execute("""SELECT co.id_conteudo, co.data, co.horas_consumidas
+    cursor.execute("""SELECT co.id_conteudo, co.data, co.horas_consumidas, c.conteudo
                       FROM consumo co
                       JOIN conteudo c ON co.id_conteudo = c.id_conteudo
                       WHERE c.categoria = 'novela';
@@ -50,16 +50,18 @@ def question2():
             for registro in lista_registros_mes:
                 if registro[0] == novela:
                     horas_consumidas += float(registro[2])
-            novelas_horas_totais.append((novela, horas_consumidas))
+            novelas_horas_totais.append((novela, horas_consumidas, registro[3]))
+        
+        
         print("Contagem de tempo de tela das novelas esse mês: ")
         for novela in novelas_horas_totais:
-            print("A novela ", novela[0], "teve o total: ", format_hour(novela[1]), "de tempo de tela")
+            print("A novela ", novela[2], "teve o total: ", format_hour(novela[1]), "de tempo de tela")
 
         ht_n_1 = novelas_horas_totais[0][1]
         if len(novelas_horas_totais) > 1:
             if novelas_horas_totais[0][1] > (ht_n_2 := novelas_horas_totais[1][1]):
-                print("A novela mais consumida esse mês foi: ", novelas_horas_totais[0][0], " com ", format_hour(ht_n_1), "de tempo tela!!")
+                print("A novela mais consumida esse mês foi: ", novelas_horas_totais[0][2], " com ", format_hour(ht_n_1), "de tempo tela!!")
             else:
-                print("A novela mais consumida esse mês foi: ", novelas_horas_totais[1][0], " com ", format_hour(ht_n_2), "de tempo tela!!")
+                print("A novela mais consumida esse mês foi: ", novelas_horas_totais[1][2], " com ", format_hour(ht_n_2), "de tempo tela!!")
         else:
-            print("A novela mais consumida esse mês foi: ", novelas_horas_totais[0][0], " com ", format_hour(ht_n_1), "de tempo de tela!!")
+            print("A novela mais consumida esse mês foi: ", novelas_horas_totais[0][2], " com ", format_hour(ht_n_1), "de tempo de tela!!")
