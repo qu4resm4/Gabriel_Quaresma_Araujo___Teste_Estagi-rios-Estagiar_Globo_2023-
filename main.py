@@ -8,7 +8,7 @@ from question4 import *
 from question5 import *
 from question6 import *
 
-#Execução do criandoDB  
+#o main executa o criandoDB
 #main()
 #reformatando()
 
