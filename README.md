@@ -8,8 +8,7 @@ PASSO A PASSO PARA EXECUTAR O PROGRAMA:
 - Abrir o arquivo main.py
 - Executar arquivo main.py
 
-PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT (versão com últimas alterações):
-*commit no Replit bugou de novo, não estou conseguindo atualizar o repositório no GitHub
+PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT:
 
 - Acesse o link
 - Faça o seu login
@@ -19,4 +18,4 @@ PASSO A PASSO PARA EXECUTAR O PROGRMA NO REPLIT (versão com últimas alteraçõ
 ## Links
 - [Replit](https://replit.com/@qu4resm4/Gabriel-Quaresma-Araujo-Teste-Estagiarios-Estagiar-Globo)
 ####
-Este projeto foi completamente desenvolvido utilizando a IDE online Replit.
+Este projeto foi completamente desenvolvido utilizando a IDE online Replit, motivado pela urgência de uma resposta imediata e pela ausência de um ambiente adequado para desenvolvimento em meu computador pessoal.
