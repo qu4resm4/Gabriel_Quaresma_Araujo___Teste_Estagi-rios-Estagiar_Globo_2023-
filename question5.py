@@ -2,6 +2,7 @@ import sqlite3
 #Qual a categoria mais consumida para cada usuário
 
 def question5():
+    print("5 - Qual a categoria mais consumida para cada usuário\n")
     ids_usuarios = set()
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()

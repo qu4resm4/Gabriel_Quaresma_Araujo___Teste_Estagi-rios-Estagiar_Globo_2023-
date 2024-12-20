@@ -3,12 +3,14 @@ from datetime import datetime
 #Conteúdo de primeiro play do usuário
 
 def question3():
+    print("3 - Conteúdo de primeiro play do usuário\n")
     set_user = set()
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()
-
-    cursor.execute("""SELECT id_user, id_conteudo, data
-                          FROM consumo""")
+    cursor.execute("""SELECT co.id_user, co.id_conteudo, co.data, c.conteudo
+                      FROM consumo co
+                      JOIN conteudo c ON co.id_conteudo = c.id_conteudo
+""")
     response = cursor.fetchall()
     print("O valor retornado da query é: ", response, "\n")
 
@@ -31,4 +33,4 @@ def question3():
               
             elif (d_play := datetime.strptime(play[2], "%d/%m/%Y")) < (d_play_m_a := datetime.strptime(play_mais_antigo[2], "%d/%m/%Y")):
                 play_mais_antigo = play
-        print("O conteúdo de primeiro play do usuário ", user, " é: ", play_mais_antigo[1])
+        print("O conteúdo de primeiro play do usuário ", user, " é: ", play_mais_antigo[3])

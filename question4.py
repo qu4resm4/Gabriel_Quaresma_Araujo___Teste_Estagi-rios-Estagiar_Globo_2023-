@@ -2,6 +2,7 @@ import sqlite3
 #Minutos por play para cada usuário
 
 def question4():
+    print("4 - Minutos por play para cada usuário\n")
     db = sqlite3.connect('registros.db')
     cursor = db.cursor()
 
